@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MessManagmentSystemModelStoreContainer" CdmEntityContainer="MessManagmentSystemEntities">
+    <EntitySetMapping Name="AttendenceManagers">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.AttendenceManager">
+        <MappingFragment StoreEntitySet="AttendenceManager">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clerks">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.Clerk">
+        <MappingFragment StoreEntitySet="Clerk">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Meals">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.Meal">
+        <MappingFragment StoreEntitySet="Meal">
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="FoodName" ColumnName="FoodName" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessRecords">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.MessRecord">
+        <MappingFragment StoreEntitySet="MessRecord">
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Expense" ColumnName="Expense" />
+          <ScalarProperty Name="Collection" ColumnName="Collection" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="JoinDate" ColumnName="JoinDate" />
+          <ScalarProperty Name="LeaveDate" ColumnName="LeaveDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Breakfasts">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.Breakfast">
+        <MappingFragment StoreEntitySet="Breakfast">
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dinners">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.Dinner">
+        <MappingFragment StoreEntitySet="Dinner">
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Launches">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.Launch">
+        <MappingFragment StoreEntitySet="Launch">
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyBills">
+      <EntityTypeMapping TypeName="MessManagmentSystemModel.MonthlyBill">
+        <MappingFragment StoreEntitySet="MonthlyBill">
+          <ScalarProperty Name="Recieved" ColumnName="Recieved" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="UnitRate" ColumnName="UnitRate" />
+          <ScalarProperty Name="Bill" ColumnName="Bill" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MessManagmentSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AttendenceManager">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Breakfast">
+    <Key>
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="SerialNumber" Type="int" Nullable="false" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="Room" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Clerk">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dinner">
+    <Key>
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="SerialNumber" Type="int" Nullable="false" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="Room" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Launch">
+    <Key>
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="SerialNumber" Type="int" Nullable="false" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="Room" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Meal">
+    <Key>
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="SerialNumber" Type="int" Nullable="false" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="FoodName" Type="varchar" MaxLength="50" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MessRecord">
+    <Key>
+      <PropertyRef Name="Month" />
+    </Key>
+    <Property Name="Month" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Expense" Type="varchar" MaxLength="50" />
+    <Property Name="Collection" Type="varchar" MaxLength="50" />
+    <Property Name="Balance" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MonthlyBill">
+    <Key>
+      <PropertyRef Name="SerialNumber" />
+    </Key>
+    <Property Name="SerialNumber" Type="int" Nullable="false" />
+    <Property Name="Month" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Room" Type="varchar" MaxLength="50" />
+    <Property Name="Bill" Type="varchar" MaxLength="50" />
+    <Property Name="UnitRate" Type="varchar" MaxLength="50" />
+    <Property Name="Total" Type="varchar" MaxLength="50" />
+    <Property Name="Recieved" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="RegistrationNumber" />
+    </Key>
+    <Property Name="RegistrationNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Room" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="JoinDate" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LeaveDate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="MessManagmentSystemModelStoreContainer">
+    <EntitySet Name="AttendenceManager" EntityType="Self.AttendenceManager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Breakfast" EntityType="Self.Breakfast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clerk" EntityType="Self.Clerk" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dinner" EntityType="Self.Dinner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Launch" EntityType="Self.Launch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Meal" EntityType="Self.Meal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MessRecord" EntityType="Self.MessRecord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonthlyBill" EntityType="Self.MonthlyBill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
